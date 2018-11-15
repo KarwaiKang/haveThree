@@ -5,6 +5,11 @@ public class Main {
         System.out.println(haveThree(new int[]{3, 4, 3, 3, 4})); // → false
     }
 
+    /**
+     * Given an array of ints, return true if the value 3 appears in the array exactly 3 times, and no 3's are next to each other.
+     * @param nums The array to check.
+     * @return true if 3 appears non-consecutively exactly 3 times.
+     */
     private static boolean haveThree(int[] nums) {
         int count = 0;
         for (int i = 0; i < nums.length; i++) {
